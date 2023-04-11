@@ -128,16 +128,50 @@
 
 //     console.log(usersArr);
 
-// }
+// };
 
 
 
+// // 8. Write a function that takes anobject and save it in local storage (object's properties as key & object's value as value).
 
 
+// let user1 = {
+//     name: 'Atif',
+//     email: 'a@a.com',
+//     age: 20,
+//     cellNo: +92008815121
+// };
 
+// function setData(user) {
 
+//     let previousData = localStorage.length
+//     if (previousData === 0) {
 
+//         for (let keys in user) { // for in loop returns the all keys of object
+//             localStorage.setItem(keys, user[keys]) // in this step : all the keys found were store to local askeys and its value as value
 
+//             // console.log(keys + " : " + user[keys] )        
+//         }
+//         console.log("Data Stored in localStorage");
+
+//     } else {
+//         console.log("Data Alraedy Found");
+//     }
+
+//     let localStorageData = {};
+//     localStorageData.name = localStorage.getItem('name')
+//     localStorageData.email = localStorage.getItem('email')
+//     localStorageData.age = localStorage.getItem('age')
+//     localStorageData.CellNo = localStorage.getItem('cellNo')
+
+//     console.log(localStorageData)
+
+//     // console.log(Object.keys(user));
+//     // console.log(Object.values(user));
+
+// };
+
+// setData(user1);
 
 
 
