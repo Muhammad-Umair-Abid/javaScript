@@ -52,22 +52,22 @@
 
    function displayResults(filteredList) {
 
-      let tableRow ;
-
+      let list = document.getElementById('listItem');
+      list.innerHTML = "";
 
       filteredList.forEach(movie => {
          let img = "https://image.tmdb.org/t/p/w45"
-      tableRow = document.createElement('tr');
+         let tableRow = document.createElement('tr');
+
+
+         let dateRelease = new Date(movie.release_date);
+         let extractReleaseYear = dateRelease.getFullYear();
 
          let movieGenres = movie.genres;
 
          if (Array.isArray(movie.genres)) {
             movieGenres = movie.genres.join(", ");
          }
-
-
-         let dateRelease = new Date(movie.release_date);
-         let extractReleaseYear = dateRelease.getFullYear();
 
          table.appendChild(tableRow)
 
